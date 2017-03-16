@@ -1,4 +1,4 @@
-/*! tether-drop 1.4.1 */
+/*! tether-drop 1.4.2 */
 
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -416,6 +416,10 @@ function createContext() {
         var _this3 = this;
 
         /* eslint no-unused-vars: 0 */
+        if (!this.drop) {
+          return;
+        }
+
         if (this.isOpened()) {
           return;
         }
@@ -474,6 +478,10 @@ function createContext() {
     }, {
       key: 'close',
       value: function close(event) {
+        if (!this.drop) {
+          return;
+        }
+
         if (!this.isOpened()) {
           return;
         }

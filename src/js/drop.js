@@ -367,6 +367,10 @@ function createContext(options={}) {
 
     open(event) {
       /* eslint no-unused-vars: 0 */
+      if (!this.drop) {
+        return;
+      }
+
       if (this.isOpened()) {
         return;
       }
@@ -422,6 +426,10 @@ function createContext(options={}) {
     }
 
     close(event) {
+      if (!this.drop) {
+        return;
+      }
+
       if (!this.isOpened()) {
         return;
       }
