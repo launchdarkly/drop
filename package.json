@@ -1,5 +1,5 @@
 {
-  "name": "tether-drop",
+  "name": "@launchdarkly/tether-drop",
   "version": "1.4.3",
   "description": "Client-side library for creating dropdowns",
   "authors": [
